@@ -27,4 +27,5 @@ urlpatterns = [
                   path('', include(('course.urls', 'course'), namespace='course')),
                   path('lesson/', include(('lesson.urls', 'lesson'), namespace='lesson')),
                   path('users/', include(('users.urls', 'users'), namespace='users')),
+                  path('payment/', include(('payment.urls', 'payment'), namespace='payment')),
               ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
